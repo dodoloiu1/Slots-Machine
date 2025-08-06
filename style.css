@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.casino-container {
+    padding: 2rem;
+}
+
+.neon-text {
+    color: #fff;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #ff0080,
+        0 0 30px #ff0080,
+        0 0 40px #ff0080;
+    margin-bottom: 2rem;
+}
+
+.neon-text-verde {
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #00ff1a,
+        0 0 20px #00ff1a,
+        0 0 30px #00ff1a,
+        0 0 40px #00ff1a;
+    margin-bottom: 2rem;
+}
+
+.neon-text-yellow {
+    color: #ffffff;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #ffb300,
+        0 0 20px #ffb300,
+        0 0 30px #ffb300,
+        0 0 40px #ffb300;
+    margin-bottom: 2rem;
+}
+
+.slot-machine {
+    background: linear-gradient(45deg, #4a4a4a, #3a3a3a);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 4px solid gold;
+}
+
+.slot-window {
+    display: flex;
+    gap: 1rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.slot-cell {
+    background: #f8f8f8;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 3rem;
+    min-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.spin-button {
+    background: linear-gradient(45deg, #00ff33, #0099ff);
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px rgba(255, 0, 128, 0.3);
+}
+
+.reset-button {
+    background: linear-gradient(45deg, #ff0000, #ff6a00);
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px rgba(255, 0, 128, 0.3);
+}
+
+.spin-button:hover,
+.reset-button:hover,
+.bet-button:hover {
+    transform: translateY(-2px);
+}
+
+.betting-controls {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+.bet-input-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.bet-input-group label {
+    color: gold;
+    font-size: 0.8rem;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+#betAmount {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid gold;
+    border-radius: 25px;
+    padding: 0.8rem;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    text-align: center;
+    width: 120px;
+    outline: none;
+}
+
+#betAmount:focus {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+#betAmount::-webkit-inner-spin-button,
+#betAmount::-webkit-outer-spin-button {
+    opacity: 1;
+    height: 30px;
+}
+
+.bet-button {
+    background: linear-gradient(45deg, #ffd700, #ffa500);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    width: 100%;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.spin-button:hover,
+.reset-button:hover,
+.bet-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(255, 0, 128, 0.4);
+}
+
+.spin-button:active,
+.reset-button:active,
+.bet-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 7px 20px rgba(255, 0, 128, 0.4);
+}
+
+.spin-button:active {
+    transform: translateY(1px);
+}
+
+.result-display {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+#resultText {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
