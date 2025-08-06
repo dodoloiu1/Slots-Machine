@@ -65,3 +65,5 @@ A fun and interactive slot machine game built with vanilla JavaScript, HTML, and
 ## 🎲 Try Your Luck!
 
 No real money is needed - start with $100 virtual cash and see if you can hit the JACKPOT! Perfect for practicing your slot machine strategy without any risk.
+![alt text](image.png)
+![alt text](image-1.png)

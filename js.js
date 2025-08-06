@@ -80,7 +80,7 @@ class Emojis {
       result.innerText = "JACKPOT";
       result.style.color = "green";
       money += bet * 10;
-
+      result.style.fontSize = "2rem";
       moneyShow.innerText = `Money: $${money.toFixed(2)}
 `;
     } else if (
@@ -90,12 +90,14 @@ class Emojis {
     ) {
       console.log("SMALL JACKPOT");
       result.innerText = "SMALL JACKPOT";
+      result.style.fontSize = "2rem";
       result.style.color = "orange";
       money += bet * 1.5;
 
       moneyShow.innerText = `Money: $${money.toFixed(2)}
 `;
     } else {
+      result.style.fontSize = "2rem";
       result.innerText = "UNLUCKY";
       result.style.color = "red";
     }

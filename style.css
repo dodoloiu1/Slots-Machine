@@ -145,16 +145,19 @@ body {
     text-align: center;
     width: 120px;
     outline: none;
+    appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 #betAmount:focus {
     box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
 }
 
+/* Hide spinners for Chrome, Safari, Edge, Opera */
 #betAmount::-webkit-inner-spin-button,
 #betAmount::-webkit-outer-spin-button {
-    opacity: 1;
-    height: 30px;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .bet-button {
@@ -198,6 +201,7 @@ body {
 }
 
 #resultText {
+    text-align: center;
     margin: 0;
     font-size: 0.8rem;
     color: #fff;
